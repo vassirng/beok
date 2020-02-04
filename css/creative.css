@@ -6705,7 +6705,6 @@ button.bg-dark:focus {
 
 .justify-content-center {
   justify-content: center !important;
-  display: flex !important;
 }
 
 .justify-content-between {
@@ -9603,6 +9602,10 @@ hr.light {
 
 iframe {
   max-width: 100% !important;
+}
+
+.display-flex {
+  display: flex !important;
 }
 
 #mainNav {
