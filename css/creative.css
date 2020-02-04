@@ -6705,6 +6705,7 @@ button.bg-dark:focus {
 
 .justify-content-center {
   justify-content: center !important;
+  display: flex !important;
 }
 
 .justify-content-between {
@@ -9601,7 +9602,6 @@ hr.light {
 }
 
 iframe {
-  width: 100% !important;
   max-width: 100% !important;
 }
 
