@@ -9,7 +9,7 @@
     color: $gray-900;
     width: 150px;
     height: 40px;
-    background: url('../img/logo-white.png') no-repeat;
+    background: url('../img/logo.png') no-repeat;
     background-size: contain;
     text-indent: -9999px;
     padding: 0 !important;
@@ -37,6 +37,8 @@
     box-shadow: none;
     background-color: transparent;
     .navbar-brand {
+      background: url('../img/logo-white.png') no-repeat;
+    background-size: contain;
       color: fade-out($white, .3);
       &:hover {
         color: $white;

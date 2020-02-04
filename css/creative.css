@@ -9612,7 +9612,7 @@ hr.light {
   color: #212529;
   width: 150px;
   height: 40px;
-  background: url("../img/logo-white.png") no-repeat;
+  background: url("../img/logo.png") no-repeat;
   background-size: contain;
   text-indent: -9999px;
   padding: 0 !important;
@@ -9640,6 +9640,8 @@ hr.light {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
+    background: url("../img/logo-white.png") no-repeat;
+    background-size: contain;
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:hover {
