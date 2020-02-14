@@ -5,8 +5,11 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    border: 1px solid $purple;
     margin-bottom: 2rem;
+
+    img {
+      border: 1px solid $purple;
+    }
 
     .details {
       background: rgba(6, 12, 34, 0.76);

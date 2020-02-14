@@ -9740,8 +9740,11 @@ header.masthead h1 {
   position: relative;
   overflow: hidden;
   text-align: center;
-  border: 1px solid #6C2B86;
   margin-bottom: 2rem;
+}
+
+#team .person img {
+  border: 1px solid #6C2B86;
 }
 
 #team .person .details {
