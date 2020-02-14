@@ -17,6 +17,10 @@ hr.divider {
   border-color: $primary;
 }
 
+hr.divider.purple {
+  border-color: $purple !important;
+}
+
 hr.light {
   border-color: $white;
 }
@@ -47,8 +51,16 @@ hr.light {
   }
 }
 
+.bg-lightgrey {
+  background-color: $lightgrey !important;
+}
+
 .bg-purple {
   background-color: $purple;
+}
+
+.round-img {
+  border-radius: 100%;
 }
 
 iframe {
