@@ -27,8 +27,8 @@
 }
 .boxed-btn3 {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
-    background: $purple;
-	color: #fff;
+    background: $white_color;
+	color: $theme-color !important;
 	display: inline-block;
 	padding: 12px 33px;
 	font-family: $font1;
@@ -38,14 +38,12 @@
     border: 1px solid transparent;
     @include border-radius(30px);
     text-align: center;
-    color: #fff !important;
     text-transform: capitalize;
     @include transition(.5s);
     cursor: pointer;
     &:hover{
         border: 1px solid $purple;
         color: $purple !important;
-        background: transparent ;
     }
     &:focus{
         outline: none;

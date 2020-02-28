@@ -336,8 +336,8 @@ h3 {
 
 .boxed-btn3 {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
-  background: #6C2B86;
-  color: #fff;
+  background: #fff;
+  color: #1F1F1F !important;
   display: inline-block;
   padding: 12px 33px;
   font-family: "Muli", sans-serif;
@@ -347,7 +347,6 @@ h3 {
   border: 1px solid transparent;
   border-radius: 30px;
   text-align: center;
-  color: #fff !important;
   text-transform: capitalize;
   transition: 0.5s;
   cursor: pointer;
@@ -356,7 +355,6 @@ h3 {
 .boxed-btn3:hover {
   border: 1px solid #6C2B86;
   color: #6C2B86 !important;
-  background: transparent;
 }
 
 .boxed-btn3:focus {
