@@ -7,8 +7,21 @@
 }
 .slider_area {
 
+    .slider_text {
+        @media #{$mobile_device} {
+            margin-top: 3rem;
+        }
+    }
+
     .coming-soon-text {
-        padding: 0 20px;
+        h3 {
+            display: block;
+            margin-bottom: 20px;
+        }
+        #cta-title {
+            margin-top: 10px;
+            display: block;
+        }
     }
 
     p, h1, h2, h3 {

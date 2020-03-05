@@ -961,8 +961,20 @@ h3 {
   background-image: url(../img/banner/banner2.png);
 }
 
-.slider_area .coming-soon-text {
-  padding: 0 20px;
+@media (max-width: 767px) {
+  .slider_area .slider_text {
+    margin-top: 3rem;
+  }
+}
+
+.slider_area .coming-soon-text h3 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.slider_area .coming-soon-text #cta-title {
+  margin-top: 10px;
+  display: block;
 }
 
 .slider_area p, .slider_area h1, .slider_area h2, .slider_area h3 {
