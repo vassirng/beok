@@ -320,7 +320,7 @@ a:focus {
 
 /* layout-3 */
 .content--layout-3 {
-	grid-template-rows: 150px 350px 150px;
+	grid-template-rows: 150px auto 150px;
 	grid-template-areas:	
 		"... title title title"
 		"... desc desc desc" 
