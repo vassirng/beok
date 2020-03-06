@@ -179,7 +179,7 @@ a:focus {
 	justify-content: center;
 	align-content: center;
 	/*grid-template-columns: 300px 300px 300px 300px; */
-	grid-template-rows: 150px 75px 75px;
+	/*grid-template-rows: 150px 75px 75px;*/
 	grid-template-areas:	"... title title title"
 							"author ... desc desc"
 							"author ... link link";
@@ -389,6 +389,15 @@ a:focus {
 	font-weight: 500;
 }
 
+.header__title.logo {
+    width: 150px;
+    height: 40px;
+    background: url('../img/logo-white.png') no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+    padding: 0 !important;
+}
+
 /* Demos */
 .demos {
 	grid-area: demos;
@@ -452,7 +461,7 @@ a:focus {
 .demo-2 {
 	--background-color: #6C2B86;
 	--background-color-2: #6C2B86;
-	--background-color-3: #6C2B86;
+	--background-color-3: #098D45;
 	--text-color: #fff;
 	--link-color: #f9ed8a;
 	--link-hover-color: #fff;
