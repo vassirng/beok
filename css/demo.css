@@ -306,7 +306,7 @@ a:focus {
 }
 
 .content--layout-2 .content__desc {
-	text-align: right;
+	text-align: left;
 }
 
 .content--layout-2 .content__link {
