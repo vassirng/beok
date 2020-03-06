@@ -629,6 +629,9 @@ a:focus {
 
 @media screen and (max-width: 36em) {
 	.content--layout {
+		/*transform: scale3d(0.7,0.7,1);*/
+	}
+	.content--layout-1 {
 		transform: scale3d(0.7,0.7,1);
 	}
 }
