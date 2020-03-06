@@ -407,7 +407,7 @@ a:focus {
   width: 100%;
   z-index: 99999;
   display: block;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   background: #fff;
 }
 
@@ -513,6 +513,7 @@ a:focus {
 @media (min-width: 48em) {
 	.header {
 		background: none;
+  	padding: 1.5rem 2rem;
 	}
   .header li {
     float: left;
