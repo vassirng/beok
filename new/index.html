@@ -1,437 +1,157 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>beok - a digital mental wellbeing platform for university students</title>
+		<meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
+		<meta name="keywords" content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+		<script>
+			document.documentElement.className = 'js';
+			var supportsCssVars = function() {
+				var s = document.createElement('style'),
+				support;
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>beok - a digital mental wellbeing platform</title>
-    <meta name="description" content="We believe in the future where no young people are left struggling with mental health issues alone. Improving access to mental health support services for students.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+				s.innerHTML = "root: { --tmp-var: bold; }";
+				document.head.appendChild(s);
+				support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+				s.parentNode.removeChild(s);
+				return support;
+			}
+			if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+		</script>
+	<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <!-- Place favicon.ico in the root directory -->
+var ml_account = ml('accounts', '1901846', 'b9p7h7s6j1', 'load');
+</script>
+<!-- End MailerLite Universal -->
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css"> 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-    <script src="//code.jivosite.com/widget/Fq8nvLT5Yn" async></script>
-
-</head>
-
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col-xl-1 col-lg-1">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-2 d-none d-lg-block">
-                           <!--  <div class="log_chat_area d-flex align-items-end">
-                                <a href="#" data-scroll-nav="0" class="say_hi">Say Hello</a>
-                            </div> -->
-                        </div>
-                        <div class="col-xl-9 col-lg-9">
-                            <div class="main-menu d-none d-lg-block text-right">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
-                                        <!-- <li><a href="Portfolio.html">Portfolio</a></li> -->
-                                        <!-- <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="portfolio_details.html">Portfolio details</a></li>
-                                                <li><a href="about.html">about</a></li>
-                                                <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="about.html">About</a></li>
-
-                                        <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
-
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay ">
-            <div class="container <!-- h-lg-100 -->">
-                <div class="row <!-- h-lg-100 --> align-items-center justify-content-left">
-                    <div class="col-12 col-lg-7 col-md-7">
-                        <div class="slider_text">
-                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
-                                Timely, anonymous and personalised mental health support for students.
-                            </h3>
-                            <!-- <a class="boxed-btn3 wow fadeInLeft"  data-wow-duration="1s" data-wow-delay=".2s" href="portfolio.html">Visit Our Works</a> -->
-                            
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5 col-md-5">
-                        <div class="coming-soon-text">
-                            <h3>COMING SOON</h3>
-                            <p>If you are a university student or a recent graduate in the UK, interested in helping us design the beta version of the platform and make a real difference in young people's lives, sign up below. </br><span id="cta-title"><strong>We want to hear from you!</strong></span></p>
-                        </div>
-                        <style type="text/css"> @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);</style><style type="text/css"> .ml-form-embedSubmitLoad{display:inline-block;width:20px;height:20px}.ml-form-embedSubmitLoad:after{content:" ";display:block;width:11px;height:11px;margin:1px;border-radius:50%;border:4px solid #fff;border-color:#fff #fff #fff transparent;animation:ml-form-embedSubmitLoad 1.2s linear infinite}@keyframes ml-form-embedSubmitLoad{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}#mlb2-1802270.ml-form-embedContainer{box-sizing:border-box;display:table;height:99.99%;margin:0 auto;position:static;width:100%!important}#mlb2-1802270.ml-form-embedContainer button,#mlb2-1802270.ml-form-embedContainer h4,#mlb2-1802270.ml-form-embedContainer p,#mlb2-1802270.ml-form-embedContainer span{text-transform:none!important;letter-spacing:normal!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper{border-width:0;border-color:transparent;border-radius:4px;border-style:solid;box-sizing:border-box;display:inline-block!important;margin:0;padding:0;position:relative}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper.embedDefault,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper.embedPopup{width:400px}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper.embedForm{width:100%}#mlb2-1802270.ml-form-embedContainer .ml-form-align-left{text-align:left}#mlb2-1802270.ml-form-embedContainer .ml-form-align-center{text-align:center}#mlb2-1802270.ml-form-embedContainer .ml-form-align-default{display:table-cell!important;vertical-align:middle!important;text-align:center!important}#mlb2-1802270.ml-form-embedContainer .ml-form-align-right{text-align:right}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img{border-top-left-radius:4px;border-top-right-radius:4px;height:auto;margin:0 auto!important;max-width:100%;width:undefinedpx}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody{padding:20px 0 0 0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal{padding-bottom:0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent{margin:0 0 20px 0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4{color:#000;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:30px;font-weight:400;margin:0 0 10px 0;text-align:left;word-break:break-word}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p{color:#000;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:20px;margin:0 0 10px 0;text-align:left}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ul,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ul{color:#000;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p a,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p a{color:#000;text-decoration:underline}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group{text-align:left!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label{margin-bottom:5px;color:#333;font-size:14px;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-weight:700;font-style:normal;text-decoration:none;display:inline-block;line-height:20px}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child{margin:0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form{margin:0;width:100%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent{margin:0 0 20px 0;width:100%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow{float:left}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm{margin:0;padding:0 0 20px 0;width:100%;height:auto;float:left}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow{margin:0 0 10px 0;width:100%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item{margin:0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal{margin:0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input{background-color:#fff!important;color:#333!important;border-color:#ccc!important;border-radius:4px!important;border-style:solid!important;border-width:1px!important;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px!important;height:auto;line-height:21px!important;margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;padding:10px 10px!important;width:100%!important;box-sizing:border-box!important;max-width:100%!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder{color:#333}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder{color:#333}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-ms-input-placeholder,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-ms-input-placeholder{color:#333}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-moz-placeholder,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-moz-placeholder{color:#333}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow textarea,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow textarea{background-color:#fff!important;color:#333!important;border-color:#ccc!important;border-radius:4px!important;border-style:solid!important;border-width:1px!important;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px!important;height:auto;line-height:21px!important;margin-bottom:0;margin-top:0;padding:10px 10px!important;width:100%!important;box-sizing:border-box!important;max-width:100%!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before{border-color:#ccc!important;background-color:#fff!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input.custom-control-input[type=checkbox]{box-sizing:border-box;padding:0;position:absolute;z-index:-1;opacity:0;margin-top:5px;margin-left:-24px;overflow:visible}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before{border-radius:4px!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after{background-color:#fff;mask-image:url(https://bucket.mlcdn.com/images/default/arrow.svg);-webkit-mask-image:url(https://bucket.mlcdn.com/images/default/arrow.svg)}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after{background-color:#fff;mask-image:url(https://bucket.mlcdn.com/images/default/circle.svg);-webkit-mask-image:url(https://bucket.mlcdn.com/images/default/circle.svg)}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input:checked~.custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::before{border-color:#6c2b86!important;background-color:#6c2b86!important;color:#fff!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before{top:2;box-sizing:border-box}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before{top:0!important;box-sizing:border-box!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before{top:0!important;box-sizing:border-box!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after{top:3px!important;box-sizing:border-box!important;position:absolute;left:-21px;display:block;width:10px;height:10px;content:""}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before{top:0!important;box-sizing:border-box!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::before{position:absolute;top:4px;left:-24px;display:block;width:16px;height:16px;pointer-events:none;content:"";background-color:#fff;border:#adb5bd solid 1px;border-radius:50%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::after{position:absolute;top:5px!important;left:-21px;display:block;width:10px;height:10px;content:""}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before{position:absolute;top:4px;left:-24px;display:block;width:16px;height:16px;pointer-events:none;content:"";background-color:#fff;border:#adb5bd solid 1px;border-radius:50%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after{position:absolute;top:3px!important;left:-21px;display:block;width:10px;height:10px;content:""}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after{position:absolute;top:3px!important;left:-21px;display:block;width:10px;height:10px;content:""}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-radio .custom-control-label::after{background:no-repeat 50%/50% 50%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-checkbox .custom-control-label::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after{background:no-repeat 50%/50% 50%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-control,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-control{position:relative;display:block;min-height:1.5rem;padding-left:1.5rem}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input{position:absolute;z-index:-1;opacity:0;box-sizing:border-box;padding:0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label{color:#000;font-size:12px!important;font-family:'Open Sans',Arial,Helvetica,sans-serif;line-height:22px;margin-bottom:0;position:relative;vertical-align:top;font-style:normal;font-weight:700}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-select,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-select{background-color:#fff!important;color:#333!important;border-color:#ccc!important;border-radius:4px!important;border-style:solid!important;border-width:1px!important;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px!important;line-height:20px!important;margin-bottom:0;margin-top:0;padding:10px 28px 10px 12px!important;width:100%!important;box-sizing:border-box!important;max-width:100%!important;height:auto;display:inline-block;vertical-align:middle;background:url(https://bucket.mlcdn.com/images/default/dropdown.svg) no-repeat right .75rem center/8px 10px;-webkit-appearance:none;-moz-appearance:none;appearance:none}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow{height:auto;width:100%;float:left}.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal{width:70%;float:left}.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal{width:30%;float:left}.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn{padding-top:25px}.ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields{box-sizing:border-box;float:left;padding-right:10px}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input{background-color:#fff;color:#333;border-color:#ccc;border-radius:4px;border-style:solid;border-width:1px;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;margin-bottom:0;margin-top:0;padding:10px 10px;width:100%;box-sizing:border-box;overflow-y:initial}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button{background-color:#6c2b86!important;border-color:#6c2b86;border-style:solid;border-width:1px;border-radius:4px;box-shadow:none;color:#fff!important;cursor:pointer;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px!important;font-weight:700;line-height:20px;margin:0!important;padding:10px!important;width:100%;height:auto}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover{background-color:#592170!important;border-color:#592170!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]{box-sizing:border-box;padding:0;position:absolute;z-index:-1;opacity:0;margin-top:5px;margin-left:-24px;overflow:visible}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description{color:#000;display:block;font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:12px;text-align:left;margin-bottom:0;position:relative;vertical-align:top}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label{font-weight:400;margin:0;padding:0;position:relative;display:block;min-height:24px;padding-left:24px}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a{color:#000;text-decoration:underline}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p{color:#000!important;font-family:'Open Sans',Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:400!important;line-height:18px!important;padding:0!important;margin:0 5px 0 0!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child{margin:0}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit{margin:0 0 20px 0;float:left;width:100%}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button{background-color:#6c2b86!important;border:none!important;border-radius:4px!important;box-shadow:none!important;color:#fff!important;cursor:pointer;font-family:'Open Sans',Arial,Helvetica,sans-serif!important;font-size:14px!important;font-weight:700!important;line-height:21px!important;height:auto;padding:10px!important;width:100%!important;box-sizing:border-box!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading{display:none}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover{background-color:#592170!important}.ml-subscribe-close{width:30px;height:30px;background:url(https://bucket.mlcdn.com/images/default/modal_close.png) no-repeat;background-size:30px;cursor:pointer;margin-top:-10px;margin-right:-10px;position:absolute;top:0;right:0}.ml-error input{background:url(https://bucket.mlcdn.com/images/default/error-icon.png) 98% center no-repeat #fff!important;background-size:24px 24px!important}.ml-error .label-description,.ml-error .label-description p,.ml-error .label-description p a,.ml-error label:first-child{color:red!important}#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p,#mlb2-1802270.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p:first-letter{color:red!important}@media only screen and (max-width:400px){.ml-form-embedWrapper.embedDefault,.ml-form-embedWrapper.embedPopup{width:100%!important}.ml-form-formContent.horozintalForm{float:left!important}.ml-form-formContent.horozintalForm .ml-form-horizontalRow{height:auto!important;width:100%!important;float:left!important}.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal{width:100%!important}.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal>div{padding-right:0!important;padding-bottom:10px}.ml-form-formContent.horozintalForm .ml-button-horizontal{width:100%!important}.ml-form-formContent.horozintalForm .ml-button-horizontal.labelsOn{padding-top:0!important}}</style><style type="text/css"> @media only screen and (max-width:400px){.ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields{margin-bottom:10px!important;width:100%!important}}</style><div id="mlb2-1802270" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-1802270"> <div class="ml-form-align-center"> <div class="ml-form-embedWrapper embedForm"> <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form"> <div class="ml-form-embedContent" style="margin-bottom:0"></div><form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/i1h3a5" data-code="i1h3a5" method="post" target="_blank"> <div class="ml-form-formContent horozintalForm"> <div class="ml-form-horizontalRow"> <div class="ml-input-horizontal"> <div style="width:100%" class="horizontal-fields"> <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required"> <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="enter your email.." autocomplete="email"> </div></div></div><div class="ml-button-horizontal primary"> <button type="submit" class="primary">I'm in!</button> <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div></button> </div></div></div><input type="hidden" name="ml-submit" value="1"> </form> </div><div class="ml-form-successBody row-success" style="display:none"> <div class="ml-form-successContent"> <h4>Thank you!</h4> <p>You have successfully joined our subscriber list.</p></div></div></div></div></div><script>function ml_webform_success_1802270(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-1802270 .row-success").show(),r(".ml-subscribe-form-1802270 .row-form").hide()}</script><img src="https://track.mailerlite.com/webforms/o/1802270/i1h3a5?v53cae9d473694604508d13feaac0545b" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0"><script src="https://static.mailerlite.com/js/w/webforms.min.js?v53cae9d473694604508d13feaac0545b" type="text/javascript"></script>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
-
-    <!-- service_area  -->
-    <div class="service_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section_title text-center mb-70">
-                        <span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s;">Vision</span>
-                        <h3 class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">We believe in the future where no young people are left struggling with mental health issues alone.</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay=".4s">
-                        <div class="icon">
-                            <img src="img/svg_icon/1.svg" alt="">
-                        </div>
-                        <h3>Timely</h3>
-                        <p>Reducing the waiting times for counselling using tech-enabled solutions.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                        <div class="icon">
-                            <img src="img/svg_icon/2.svg" alt="">
-                        </div>
-                        <h3>Anonymous</h3>
-                        <p>Focusing on providing anonymous and safe environment to share your story.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_service text-center wow fadeInRight" data-wow-duration="1.2s" data-wow-delay=".4s">
-                        <div class="icon">
-                            <img src="img/svg_icon/3.svg" alt="">
-                        </div>
-                        <h3>Personalised</h3>
-                        <p>Applying person-centered approach to designing mental health support for you.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ service_area  -->
-
-    <div class="about_area">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="about_info">
-                        <div class="section_title white_text">
-                            <span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Our Mission</span>
-                            <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Empowering individuals </h3>
-                            <p class="mid_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Efficiently unleash cross-media tour function information without cross action media value. Quickly maximize timely deliverables for real-time schemas.</p>
-                            <p class="last_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">“Function information without cross action media value.</p>
-                            <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">About Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- team_member_start -->
-    <div class="team_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-90">
-                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Meet the team</h3>
-                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Tour function information without cross action media value quickly maximize timely deliverables.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6"></div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="team_thumb">
-                            <img src="img/team/1.png" alt="">
-                            <div class="team_hover">
-                                <div class="hover_inner text-center">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_title text-center">
-                            <h3>Anna Starostina</h3>
-                            <p>Founder & CEO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="team_thumb">
-                            <img src="img/team/2.png" alt="">
-                            <div class="team_hover">
-                                <div class="hover_inner text-center">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_title text-center">
-                            <h3>Vassi Rangelova</h3>
-                            <p>Co-Founder & CTO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6"></div>
-            </div>
-        </div>
-    </div>
-    <!--/ team_member_end -->
-
-    <!-- testimonial_area  -->
-    <div class="testimonial_area ">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testmonial_active owl-carousel">
-                        <div class="single_carousel">
-                                <div class="single_testmonial text-center">
-                                        <div class="quote">
-                                            <img src="img/testmonial/quote.svg" alt="">
-                                        </div>
-                                        <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
-                                                sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
-                                                Fusce ac mattis nulla. Morbi eget ornare dui. </p>
-                                        <div class="testmonial_author">
-                                            <div class="thumb">
-                                                    <img src="img/testmonial/thumb.png" alt="">
-                                            </div>
-                                            <h3>Robert Thomson</h3>
-                                            <span>Business Owner</span>
-                                        </div>
-                                    </div>
-                        </div>
-                        <div class="single_carousel">
-                                <div class="single_testmonial text-center">
-                                        <div class="quote">
-                                            <img src="img/testmonial/quote.svg" alt="">
-                                        </div>
-                                        <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
-                                                sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
-                                                Fusce ac mattis nulla. Morbi eget ornare dui. </p>
-                                        <div class="testmonial_author">
-                                            <div class="thumb">
-                                                    <img src="img/testmonial/thumb.png" alt="">
-                                            </div>
-                                            <h3>Robert Thomson</h3>
-                                            <span>Business Owner</span>
-                                        </div>
-                                    </div>
-                        </div>
-                        <div class="single_carousel">
-                                <div class="single_testmonial text-center">
-                                        <div class="quote">
-                                            <img src="img/testmonial/quote.svg" alt="">
-                                        </div>
-                                        <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
-                                                sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
-                                                Fusce ac mattis nulla. Morbi eget ornare dui. </p>
-                                        <div class="testmonial_author">
-                                            <div class="thumb">
-                                                    <img src="img/testmonial/thumb.png" alt="">
-                                            </div>
-                                            <h3>Robert Thomson</h3>
-                                            <span>Business Owner</span>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /testimonial_area  -->
-
-    <div data-scroll-index="0" class="get_in_tauch_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-90">
-                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Get in touch</h3>
-                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Tour function information without cross action media value quickly maximize timely deliverables.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="touch_form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                        <input type="text" placeholder="Your Name" >
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                                        <input type="email" placeholder="Email" >
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                        <input type="email" placeholder="Subject" >
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                                       <textarea name="" id="" cols="30" placeholder="Message" rows="10"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="submit_btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-                                        <button class="boxed-btn3" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	</head>
+	<body class="demo-2 loading">
+		<!-- <svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="shape-demo" viewBox="0 0 200 100">
+				<title>shape demo</title>
+				<path d="M 6.144,74.1 C 20.4,107.4 70.13,94.33 94.22,95.74 121.3,97.41 130.8,101.1 154.7,99.38 178.6,97.72 201.9,78.95 199.4,46.86 197.1,14.96 174.9,4.781 161.4,1.827 147.9,-1.128 119.8,8.284 105.6,8.766 85.34,9.449 81.91,7.628 51.08,2.334 17.26,-3.482 -8.105,40.84 6.144,74.1 Z" />
+			</symbol>
+		</svg> -->
+		<main>
+			<div class="morph-wrap">
+				<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+					<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+				</svg>
+			</div>
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<!-- <div class="codrops-links">
+						<svg class="decoshape" viewBox="0 0 200 100" width="100%" height="100%" preserveAspectRatio="none">
+							<path d="M 10.45,74.41 C 39.4,110.8 72.59,67.27 95.98,68.68 122.3,70.35 131.5,101.4 154.7,99.69 177.9,98.03 200.5,79.26 198.1,47.17 195.9,15.27 174.6,-0.3279 151.8,0.9941 128.6,2.581 126,16.86 107,22.76 88.26,28.67 88.87,12.36 60.37,1.787 31.79,-8.877 -18.61,37.92 10.45,74.41 Z" />
+						</svg>
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/FolderPreviewIdeas/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=31190" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div> -->
+					<!-- <h1 class="codrops-header__title">Morphing Background Shapes</h1> -->
+				</header>
+				<!-- <nav class="demos">
+					<a href="">Become a student ambassador</a>
+				</nav> -->
+				<a class="pater" href="#">
+					<svg class="pater__deco" width="300" height="240" viewBox="0 0 1000 800">
+						<path d="M27.4,171.8C73,42.9,128.6,1,128.6,1s0,0,0,0c58.5,0,368.3,0.3,873.2,0.8c38.5,211,42.1,373.5,38.9,476.7c-2.5,80.3-10.6,174.9-76.7,247.8c-15.1,16.6-37.4,41.2-72.8,53.9c-92.4,33.1-173-50.8-283.9-99.4c-224.3-98.4-334.9,51.4-472.2-45.6C-6.3,535.2-14.5,290.6,27.4,171.8z"/>
+					</svg>
+					<h4 class="pater__title">Want to be a part of the solution?</h4>
+					<p class="pater__desc">This is who we are looking for...</p>
+				</a>
+				<!-- <div class="deco deco--title">2017 Westland Exhibition Center</div> -->
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-1">
+					<!-- <img class="content__img" src="img/3.jpg" alt="Some image" /> -->
+					<h3 class="content__title">Timely, anonymous and personalised mental health support for students.</h3>
+					<!-- <a href="#" class="content__link">Discover</a> -->
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-2">
+					<!-- <img class="content__img" src="img/4.jpg" alt="Some image" /> -->
+					<h3 class="content__title">mission</h3>
+					<!-- <p class="content__author">Nikimo Westlane</p> -->
+					<p class="content__desc">beok is an early stage health tech start-up that aims to develop and build a digital mental wellbeing platform to provide timely, anonymous and customised support to university students in the UK. To build our platform we focus on innovative tech solutions and evidence-based research.</p>
+					<!-- <a href="#" class="content__link">Discover</a> -->
+				</div>
+			</div>
+			<div class="content-wrap dark-text">
+				<div class="content content--layout content--layout-3">
+					<!-- <img class="content__img" src="img/1.jpg" alt="Some image" /> -->
+					<h3 class="content__title">coming soon</h3>
+					<!-- <p class="content__author">author</p> -->
+          <p class="content__desc">If you are a university student or a recent graduate in the UK, interested in helping us design the beta version of the platform and make a real difference in young people's lives, sign up below. 
+          </br>
+          <span id="cta-title"><strong>We want to hear from you!</strong></span>
+        	</p>
+      		<p class="content__signup ml-form-embed"
+					  data-account="1901846:b9p7h7s6j1"
+					  data-form="1802270:i1h3a5">
+					</p>
 
 
-    <!-- footer start -->
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer_logo wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                            <a href="index.html">
-                                <img src="img/logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7 col-md-9">
-                        <div class="menu_links">
-                            <ul>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s" href="#">About</a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"></li>
-                                <!-- <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s" href="#">Services</a></li> -->
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s" href="#">Portfolio</a></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".8s" href="#">Pages</a></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" href="#">Blog</a></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s" href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                        <div class="socail_links">
-                            <ul>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--/ footer end  -->
 
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
-
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-    <script src="js/main.js"></script>
-</body>
-
+					<!-- <a href="#" class="content__link">Discover</a> -->
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-4">
+					<img class="content__img" src="img/2.jpg" alt="Some image" />
+					<h3 class="content__title">east</h3>
+					<p class="content__author">Walter Mastricht</p>
+					<p class="content__desc">The outer bounds of the world, from within.</p>
+					<a href="#" class="content__link">Discover</a>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content content--layout content--layout-1">
+					<img class="content__img" src="img/5.jpg" alt="Some image" />
+					<h3 class="content__title">frank</h3>
+					<p class="content__author">Frank Cherry</p>
+					<p class="content__desc">Frank's work and nothing more.</p>
+					<a href="#" class="content__link">Discover</a>
+				</div>
+			</div>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<p class="content__info">If you enjoyed this demo you might also like:</p>
+				<a class="content__related-item" href="https://tympanus.net/Development/ElasticSVGElements/">
+					<img class="content__related-img" src="img/related/ItemRevealer.jpg">
+					<h3 class="content__related-title">Elastic SVG Elements</h3>
+				</a>
+				<a class="content__related-item" href="https://tympanus.net/Development/ItemRevealer/">
+					<img class="content__related-img" src="img/related/ElasticSVGElements.jpg">
+					<h3 class="content__related-title">Item Revealer</h3>
+				</a>
+			</section>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/demo2.js"></script>
+	</body>
 </html>

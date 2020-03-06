@@ -1,0 +1,40 @@
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.5;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #098D45;
+}
+
+.content {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-purple {
+	color: #6C2B86;
+}
+
+.text-green {
+	color: #098D45;
+}
+
+.text-apply {
+	font-size: 1.5rem;
+}
+
+.text-apply .email {
+	font-weight: bold;
+	font-size: 2rem;
+}
