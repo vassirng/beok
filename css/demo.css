@@ -179,7 +179,7 @@ a:focus {
 	justify-content: center;
 	align-content: center;
 	/*grid-template-columns: 300px 300px 300px 300px; */
-	/*grid-template-rows: 150px 75px 75px;*/
+	grid-template-rows: auto auto auto;
 	grid-template-areas:	"... title title title"
 							"author ... desc desc"
 							"author ... link link";
@@ -320,7 +320,7 @@ a:focus {
 
 /* layout-3 */
 .content--layout-3 {
-	grid-template-rows: 150px auto 150px;
+	/*grid-template-rows: 150px auto 150px;*/
 	grid-template-areas:	
 		"... title title title"
 		"... desc desc desc" 
