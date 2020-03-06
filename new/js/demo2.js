@@ -224,7 +224,8 @@
 			tx: 0,
 			ty: 150,
 			fill: {
-				color: '#44b7a3',
+				color: '#4b66b3',
+				// color: '#44b7a3',
 				duration: 500,
 				easing: 'linear'
 			},
