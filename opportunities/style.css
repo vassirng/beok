@@ -1,0 +1,91 @@
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.5;
+	color: #333;
+	font-size: 1.2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #098D45;
+}
+
+.header {
+  z-index: 999;
+  display: block;
+  position: relative;
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+    background: url('../img/logo.png') no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+    padding: 0 !important;
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 99999999;
+}
+
+.content {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-purple {
+	color: #6C2B86;
+}
+
+.text-green {
+	color: #098D45;
+}
+
+.text-apply {
+	font-size: 2rem;
+}
+
+.text-apply .email {
+	font-weight: bold;
+}
+
+h1.title {
+	z-index: 99;
+	position: relative;
+}
+
+.description {
+	position: relative;
+	margin: 2rem 0;
+}
+
+.description.ambassadors {
+	margin-top: 4rem;
+}
+
+.blob-title {
+	position: relative;
+}
+
+.pater__deco {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  fill: #eee585;
+}
+
