@@ -301,6 +301,12 @@ a:focus {
 	border-radius: 100%;
 }
 
+.content__related-info {
+	max-width: 300px;
+	text-align: left !important;
+	color: #333;
+}
+
 .content__related-item:hover .content__related-img,
 .content__related-item:focus .content__related-img {
 	opacity: 1;
@@ -310,6 +316,16 @@ a:focus {
 	font-size: 1.2em;
 	margin: 0;
 	padding: 0.5em;
+	text-align: left;
+	color: #333;
+}
+
+.content__related-subtitle {
+	font-size: 1em;
+	margin: 0;
+	padding: 0 0.5em 0;
+	text-align: left;
+	color: #333;
 }
 
 /* Different layouts */
@@ -640,6 +656,31 @@ a:focus {
 	}
 	.demos {
 		text-align: center;
+	}
+
+	.content--related {
+		display: block !important; 
+	}
+	.content__related-item {
+		width: 100% !important;
+	}
+
+	.content__related-img {
+		max-width: 200px;
+		margin: 0 auto;
+	}
+
+	.content__related-title,
+	.content__related-subtitle {
+		text-align: center;
+	}
+
+	.content__related-info {
+		margin: 10px auto 20px auto;
+	}
+
+	main {
+		overflow: auto;
 	}
 }
 
