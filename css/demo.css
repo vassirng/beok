@@ -333,7 +333,7 @@ a:focus {
 
 @media screen and (min-width: 45em) {
 	.content--layout-3 {
-		grid-template-rows: 100px 250px 150px;
+		grid-template-rows: auto auto auto; /*100px 250px 150px*/
 	}
 }
 
