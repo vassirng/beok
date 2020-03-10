@@ -244,6 +244,22 @@ a:focus {
 	font-size: 24px;
 }
 
+.content__cta {
+	grid-area: cta;
+	margin: 0;
+	z-index: 10;
+	padding: 0 1em;
+	cursor: default;
+	font-size: 26px;
+}
+
+.content__cta a {
+	color: var(--background-color-3);
+	
+/*	background: var(--background-color-3);
+	padding: 1rem;*/
+}
+
 .content__img,
 .content__title,
 .content__author,
@@ -324,7 +340,8 @@ a:focus {
 	grid-template-areas:	
 		"... title title title"
 		"... desc desc desc" 
-		"... signup signup signup";
+		"... signup signup signup"
+		"... cta cta cta";
 
 		/*"... ... desc desc"
 		"author title title title"
