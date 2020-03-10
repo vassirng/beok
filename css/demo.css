@@ -254,10 +254,15 @@ a:focus {
 }
 
 .content__cta a {
-	color: var(--background-color-3);
-	
+	/*color: var(--background-color-3);*/
+	color: #6c2b86;
+
 /*	background: var(--background-color-3);
 	padding: 1rem;*/
+}
+
+.content__cta a:hover {
+	color: #592170;
 }
 
 .content__img,
