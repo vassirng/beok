@@ -687,6 +687,10 @@ a:focus {
 	main {
 		overflow: auto;
 	}
+
+	#advisors {
+    margin-bottom: 60px;
+	}
 }
 
 @media screen and (max-width: 40em) {
