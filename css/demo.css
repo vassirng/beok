@@ -193,7 +193,7 @@ a:focus {
 	justify-content: center;
 	padding: 0 2em;
 	min-height: 600px;
-	height: 100vh;
+	/*height: 100vh;*/
 	font-size: 0.85em;
 }
 
@@ -295,7 +295,8 @@ a:focus {
 }
 
 .content__related-img {
-	max-width: 100%;
+	width: 100%;
+	max-width: 250px;
 	opacity: 0.8;
 	transition: opacity 0.3s;
 	border-radius: 100%;
@@ -303,7 +304,7 @@ a:focus {
 
 .content__related-info {
 	max-width: 300px;
-	text-align: left !important;
+	text-align: justify !important;
 	color: #333;
 }
 
@@ -316,7 +317,7 @@ a:focus {
 	font-size: 1.2em;
 	margin: 0;
 	padding: 0.5em;
-	text-align: left;
+	text-align: center;
 	color: #333;
 }
 
@@ -324,7 +325,7 @@ a:focus {
 	font-size: 1em;
 	margin: 0;
 	padding: 0 0.5em 0;
-	text-align: left;
+	text-align: center;
 	color: #333;
 }
 
