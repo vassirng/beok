@@ -304,7 +304,7 @@ a:focus {
 
 .content__related-info {
 	max-width: 300px;
-	text-align: justify !important;
+	text-align: justify;
 	color: #333;
 }
 
@@ -638,6 +638,10 @@ a:focus {
 	--text-color: #333;
 	--link-color: #6C2B86;
 	--link-hover-color: #333;
+}
+
+.text-center {
+	text-align: center !important;
 }
 
 @media screen and (max-width: 50em) {
