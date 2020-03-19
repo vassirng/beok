@@ -116,7 +116,7 @@
 	DOM.shapeEl = DOM.svg.querySelector('path');
 	DOM.contentElems = Array.from(document.querySelectorAll('.content-wrap'));
 	DOM.contentLinks = Array.from(document.querySelectorAll('.content__link'));
-	DOM.footer = document.querySelector('.content--related');
+	DOM.footer = Array.from(document.querySelector('.content--related'));
 	const contentElemsTotal = DOM.contentElems.length;
 	const shapes = [
 		{
