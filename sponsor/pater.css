@@ -2,14 +2,14 @@
 	font-size: 0.65em;
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	left: 0;
 	width: 100%;
-  padding: 1em 0 1.5em 0;
+  padding: 1em 0 1.5em 0;;
 	display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    background: var(--background-color-3);
-    z-index: 999;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--background-color-3);
+  z-index: 999;
 }
 
 .pater,
@@ -61,10 +61,10 @@
 @media screen and (min-width: 50em) {
 	.pater {
 		text-align: right;
-		/*top: 0;*/
-		bottom: 0;
+		bottom: 30px;
+		left: 0;
 		width: auto;
-		padding: 3em 1.5em 0 0;
+		padding: 2em 1.5em;
 		display: block;
 		font-size: 0.85em;
 		background: transparent;
@@ -77,8 +77,8 @@
 	}
 	.pater__title {
 		display: block;
-		margin: 0.75em 0;
-		color: #333;
+		margin: 0.75em 0 0.2em 0;
+		color: #6c2b86 !important;
 	}
 	.pater__desc {
 		display: block;
@@ -97,14 +97,21 @@
 		width: auto;
 		margin: 0;
 	}
+
+	.pater:hover {
+		background-color: rgba(154,208,178,0.5);
+		border-radius: 20px;
+	}
+
 	.pater:hover .pater__desc {
 		opacity: 1;
 		transform: translate3d(0,0,0);
 		transition-delay: 0.2s;
+		color: #333 !important;
 		/*font-size: 15px;*/
 	}
 	.pater:hover .pater__title {
-		color: #ccc;
+		color: #333;
 	}
 
 	.pater__deco {
