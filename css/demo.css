@@ -704,7 +704,7 @@ a:focus {
 @media screen and (max-width: 40em) {
 	.content--layout {
 		transform: scale3d(0.8,0.8,1);
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 }
 
