@@ -59,6 +59,10 @@ p {
 	animation: loaderAnim 0.8s linear infinite forwards;
 }
 
+.text-green {
+	color: #098D45;
+}
+
 @keyframes loaderAnim {
 	to {
 		transform: rotate(360deg);
@@ -251,6 +255,8 @@ a:focus {
 	padding: 0 1em;
 	cursor: default;
 	font-size: 26px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .content__cta a {
@@ -331,6 +337,13 @@ a:focus {
 	padding: 0 0.5em 0;
 	text-align: center;
 	color: #333;
+}
+
+.btn-cta {
+	color: #fff !important;
+	background-color: #098D45;
+	padding: 1rem 2rem;
+	border-radius: 10px;
 }
 
 /* Different layouts */
