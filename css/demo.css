@@ -286,7 +286,7 @@ a:focus {
 }
 
 .content__info.team {
-	grid-column: 3 / 3;
+  grid-column: 1 / 7;
 }
 
 .content__info.email {
@@ -429,8 +429,7 @@ a:focus {
 }
 
 .logo {
-    width: 150px;
-    height: 40px;
+    width: 80px;
     background: url('../img/logo.png') no-repeat;
     background-size: contain;
     text-indent: -9999px;
@@ -475,6 +474,7 @@ a:focus {
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
+  margin-top: 13px;
 }
 
 /* menu */
@@ -558,6 +558,10 @@ a:focus {
 		background: none;
   	padding: 1.5rem 2rem;
 	}
+
+	.logo {
+		width: 150px;
+	}
   .header li {
     float: left;
   }
@@ -635,7 +639,7 @@ a:focus {
 }
 
 /* Demo themes */
-.demo-2 {
+.beok-body {
 	--background-color: #c2a8cd;
 	--background-color-2: #c2a8cd;
 	--background-color-3: #098D45	;
@@ -800,4 +804,34 @@ p a {
 	left: 0px;
 }*/
 
+.covid-announcement {
+	background-color: #098D45;
+	padding: 1rem;
+	width: 100%;
+	z-index: 99999999;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	height: 70px;
+}
+
+.covid-announcement a {
+	color: #fff;
+	font-weight: bold;
+}
+
+header.header {
+	margin-top: 70px;
+}
+
+.header {
+	padding: 0.5rem 1rem;
+}
+
+@media (min-width: 48em) {
+	.covid-announcement {
+		height: auto;
+	}
+}
 
