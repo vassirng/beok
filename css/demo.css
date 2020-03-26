@@ -254,7 +254,7 @@ a:focus {
 	z-index: 10;
 	padding: 0 1em;
 	cursor: default;
-	font-size: 26px;
+	font-size: 24px;
 	text-align: center;
 	margin-top: 10px;
 }
@@ -297,6 +297,7 @@ a:focus {
 
 .content__info.email {
 	font-size: 20px;
+	margin-bottom: 0;
 }
 
 .content__related-item {
@@ -307,7 +308,7 @@ a:focus {
 .content__related-img {
 	width: 100%;
 	max-width: 250px;
-	opacity: 0.8;
+	opacity: 0.9;
 	transition: opacity 0.3s;
 	border-radius: 100%;
 }
@@ -342,7 +343,7 @@ a:focus {
 .btn-cta {
 	color: #fff !important;
 	background-color: #098D45;
-	padding: 1rem 2rem;
+	padding: 1rem;
 	border-radius: 10px;
 }
 
@@ -739,7 +740,8 @@ a:focus {
 	}
 	.content__author,
 	.content__desc,
-	.content__link {
+	.content__link,
+	.content__cta {
 		font-size: 1.35em;
 	}
 }
