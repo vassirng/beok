@@ -600,6 +600,10 @@ ul.social li img {
   	padding: 1.5rem 2rem;
 	}
 
+	.header .logo {
+		margin-top: 0;
+	}
+
 	.logo {
 		width: 150px;
 	}
