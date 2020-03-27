@@ -323,7 +323,7 @@ a:focus {
 	max-width: 300px;
 	text-align: justify;
 	color: #333;
-  font-size: 120%;
+  font-size: 16px;
 	margin-top: 15px;
 }
 
@@ -789,7 +789,14 @@ ul.social li img {
 	.content__cta {
 		font-size: 1.35em;
 	}
+
+	.content__related-info {
+		font-size: 1.2em;
+	}
 }
+
+
+
 
 @media screen and (max-width: 28em) {
 	.content--layout {
