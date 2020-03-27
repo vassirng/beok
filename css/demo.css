@@ -187,7 +187,6 @@ a:focus {
 	grid-template-areas:	"... title title title"
 							"author ... desc desc"
 							"author ... link link";
-	padding: 2rem;
 	max-width: 1000px;
 }
 
@@ -782,7 +781,7 @@ ul.social li img {
 		/*transform: scale3d(0.6,0.6,1);*/
 	}
 	.content--layout-1 {
-		transform: scale3d(0.6,0.6,1);
+		/*transform: scale3d(0.6,0.6,1);*/
 	}
 	.content__author,
 	.content__desc,
