@@ -353,9 +353,8 @@ a:focus {
 .btn-cta {
 	color: #fff !important;
 	background-color: #098D45;
-	padding: 1rem !important;
+	padding: 15px !important;
 	border-radius: 10px;
-	font-size: 20px;
 }
 
 ul.social {
@@ -503,7 +502,7 @@ ul.social li img {
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 10px;
   text-decoration: none;
   text-align: center;
   font-size: 18px;
@@ -572,7 +571,7 @@ ul.social li img {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: unset;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -590,6 +589,10 @@ ul.social li img {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+.header li a.btn-cta {
+	background-color: var(--link-color);
 }
 
 /* 48em = 768px */
@@ -615,7 +618,6 @@ ul.social li img {
   }
   .header li a.btn-cta {
   	margin-left: 15px;
-  	background-color: var(--link-color);
   }
   .header .menu {
     clear: none;
