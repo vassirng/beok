@@ -291,7 +291,8 @@ a:focus {
 	grid-column: 1 / 3;
 }
 
-.content__info.team {
+.content__info.team,
+.content__info.advisory {
   grid-column: 1 / 7;
 }
 
